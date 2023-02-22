@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, "Tahoma", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #a058e4;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Lobster", cursive, Tahoma;
+}
+
+.topnav a:hover {
+  color: yellow;
+}
+
+.topnav a.active {
+  color: #cd58d1;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .fr {
+  float: right;
+}
+
+.pic1 {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid yellow;
+}
+
+.logo {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+}
+
+.feature {
+  font-family: "Lobster", cursive, Tahoma;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+
+.picText {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.glow {
+  font-size: 28px;
+  color: #fff;
+  text-align: center !important;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .logo {
+    width: 100%;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.myFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d1e26;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  word-spacing: 2px;
+  margin-top: 20px;
+}
